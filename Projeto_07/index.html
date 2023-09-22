@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style.css" >
+	<link rel="shortcut icon" href="img/LDR2.jpeg" type="image/x-icon">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+	 <link rel="stylesheet" href="css/font-awesome.min.css">
+	<title>D'Rolê</title>
+</head>
+<body>
+  <header>
+  	<div class="container">
+  		<div class="menu-topo">
+	  		<div class="logo"></div><!--logo-->
+		  		<nav class="desktop">
+		  			<ul>
+		  				<li><a href="">Sobre</a></li>
+		  				<li><a href="">Serviços</a></li>
+		  				<li><a href="">Contato</a></li>
+		  			    <button class="btnLogin-popup">Login</button>
+		  			</ul>
+		  		</nav><!--desktop-->
+		  		<nav class="mobile">
+		  			<h3><i class="fa fa-bars"></i></h3>
+		  			<ul>
+		  				<li><a href="">Sobre</a></li>
+		  				<li><a href="">Serviços</a></li>
+		  				<li><a href="">Contato</a></li>
+		  				<li class="btn-nav"><a href="">Login</a></li>
+		  			</ul>
+		  		</nav><!--mobile-->
+		  		<div class="clear"></div>
+  		</div><!--menu-topo-->
+		  <div class="wrapper">
+
+			<span class="icon-close">
+				<ion-icon name="close-outline"></ion-icon>
+			</span>
+
+			<div class="form-box login">
+				<h2>Login</h2>
+				<form action="#">
+					<div class="input-box">
+						<span class="icon"><ion-icon name="mail"></ion-icon></span>
+						<input type="email" required>
+						<label>Email</label>
+					</div>
+					<div class="input-box">
+						<span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+						<input type="password" required>
+						<label>Password</label>
+					</div>
+					<div class="remenber-forgot">
+						<label><input type="checkbox">Remenber me</label>
+						<a href="#">Forgot Password?</a>
+					</div>
+					<button type="submit" class="btn">Login</button>
+					<div class="login-register">
+						<p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+					</div>
+				</form>
+			</div>
+			
+			<div class="form-box register">
+				<h2>Register</h2>
+				<form action="#">
+					<div class="input-box">
+						<span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+						<input type="text" required>
+						<label>Usuário</label>
+					</div>
+					<div class="input-box">
+						<span class="icon"><ion-icon name="mail"></ion-icon></span>
+						<input type="email" required>
+						<label>Email</label>
+					</div>
+					<div class="input-box">
+						<span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+						<input type="password" required>
+						<label>Password</label>
+					</div>
+					<div class="remenber-forgot">
+						<label><input type="checkbox">Eu aceito os termos e condições</label>
+						<a href="#">Forgot Password?</a>
+					</div>
+					<button type="submit" class="btn">Register</button>
+					<div class="login-register">
+						<p>Already have an account? <a href="#" class="login-link">Login</a></p>
+					</div>
+				</form>
+			</div>
+		</div>
+  <!--		<div class="chamada-header">
+  			<h2>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.</h2>
+  			<p>Cras aliquam metus est, vitae porta sapien rhoncus ac. Sed in volutpat ante.</p>
+  			<form>
+  				<input type="email" required="" placeholder="Login" value="">
+				<input type="password" name="Senha" value=""  placeholder="Senha"/>
+  				<input type="submit" name="acao" value="Entrar">
+  			</form>
+  		</div>
+  	</div>  -->
+  </header>
+
+  <section class="descrição">
+  	<div class="container">
+  		<p> A diversão agora com mais tranquilidade e facilidade!
+			<br> Cola na gente e vamos nos divertir juntos!</p>
+  	</div><!--container-->
+  </section><!--descrição-->
+
+  <section class="descrição-senac">
+  	<div class="container">
+  		<div class="descrição-texto">
+  			<h3>Quem nunca desistiu de um encontro entre amigos por não ter tempo de organizar.</h3>
+  			<p>Imagine ter uma facilidade para marcar e organizar encontros, além de ter um suporte para
+				buscar um local adequado para todos os integrantes do grupo, interessante? e essa é a nossa proposta, 
+				com um intuito de simplificar e deixar mais viável para todos, nós então partimos para a criação do nosso
+				projeto.
+			</p>
+  		</div>
+  		<img alt="trabalho-senac" title="trabalho-senac" src="img/bg9.jpeg">
+  		<div class="clear"></div>
+  	</div><!--container-->
+  </section><!--descrição-senac-->
+
+  <section class="descrição-senac2">
+	<div class="carousel">
+		<p>Há vários locais para você e seus amigos se divertirem, venham conhecer conosco!</p><br>
+		<ul>
+		   <!-- <button type="button" id="prev-btn"><ion-icon name="chevron-back-outline"></ion-icon></button>-->
+			<li class="slide">
+				<img src="img/bg13.jpg" alt="Imagem 1">
+			</li>
+			<li class="slide">
+			   <img src="img/bg11.jpg" alt="Imagem 2">
+			</li>
+			<li class="slide">
+				<img src="img/bg12.jpg" alt="Imagem 3">
+			</li>
+			<!-- <button type="button" id="next-btn"><ion-icon name="chevron-forward-outline"></ion-icon></button>-->
+		</ul>
+	</div>
+<!--  	<div class="container">
+  		<div class="box-depoimento">
+  			<p> "A linha divisória entre desordem e ordem está na logística."</p>
+  			<br>
+  			<p><b> Sun Tzu</b></p>
+  		</div>
+  	</div>  -->
+  </section><!--descrição-senac2-->
+
+  <footer>
+	<dl>
+		<dt>Cola no Pai</dt>
+		<dd>Segue nos no instagram / @eo_d_role</dd>
+		<br>
+		<dt>Grupo do Discord</dt>
+		<dd>#D'Role</dd>
+	</dl>
+
+	<p>D'Rolê</p>
+</footer>
+
+
+  <script src="Js/jquery.js"></script>  
+  <script src="Js/app.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script>
+  	$('nav.mobile h3').click(function(){
+  		$('nav.mobile').find('ul').slidetoggle();
+  		
+  	})
+  </script>
+
+</body>
+</html>

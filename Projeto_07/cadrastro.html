@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Formulario de Cadrastro</title>
+        <script src="./Js/app.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </head>
+    <body>
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+            }
+
+            .container{
+                text-align: center;
+                background: #ccc;
+                max-width: 600px;
+                margin: 0 auto;
+                padding: 30px;
+                border-radius: 1px solid #ccc;
+            }
+
+            .form-group{
+                margin-bottom: 10px;
+            }
+
+            label{
+                left: 10px;
+                display: block;
+                font-weight: bold;
+            }
+
+            input[type=text],
+            input[type=email],
+            input[type=password]{
+                width: 40%;
+                padding: 10px;
+                margin-bottom: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+
+            button[type=submit]{
+                text-align: center;
+                width: 30%;
+                padding: 10px 10px;
+                background-color: #007bff;
+                color: #fff;
+                border: none;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+
+                        /* Estilize a div do carrossel */
+            .carousel {
+                width:760px;
+                height:433px; 
+                overflow: hidden; /* Ocultar conteúdo além da largura */
+                align-items: center;
+                margin: 50px auto;
+                border-radius: 10px;
+                
+            }
+            .carousel ul{
+                display: flex;
+                list-style: none;
+                width: 2280px; 
+                height: 433px;
+            }
+
+            .carousel li{
+                position: relative; /* Posição relativa para posicionamento dos slides */
+                animation: slide 15s infinite ease-out;
+            }
+
+            @keyframes slide{
+                0%{left: 0px}
+                20%{left: 0px}
+
+
+                30%{left: -760px}
+                50%{left: -760px}
+
+
+                60%{left: -1520px}
+                90%{left: -1520px;}
+
+                100%{left: 0px}
+            }
+            /*
+            #prev-btn, #next-btn{
+                position: relative;
+                border: none;
+                background-color: transparent;
+                cursor: pointer;
+                margin-right: 25px;
+            }*/
+
+            /* Estilize os slides 
+            .slide {
+                width: 850px; 
+                height: 450px;
+                float: left; 
+            }
+
+            
+            .slide img {
+                width: 100%; 
+                height: auto; 
+            }
+
+            
+            .slide {
+                transition: transform 0.3s ease-in-out;
+            }
+ */           
+
+        </style>
+        <div class="container">
+           <h2>Formulario de Cadastro</h2>
+           <form action="#" method="post">
+            <div class="from-group">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome"
+                name="nome" required>
+            </div><!--from-group-->
+
+            <div class="from-group">
+                <label for="nome">E-mail</label>
+                <input type="email" id="nome"
+                name="E-mail" required>
+            </div><!--from-group-->
+
+            <div class="from-group">
+                <label for="nome">Senha</label>
+                <input type="password" id="nome"
+                name="Senha" required>
+            </div><!--from-group-->
+
+            <button type="submit">Cadastar</button>
+
+           </form>
+        </div><!--container-->
+
+        <div class="carousel">
+            <ul>
+               <!-- <button type="button" id="prev-btn"><ion-icon name="chevron-back-outline"></ion-icon></button>-->
+                <li class="slide">
+                    <img src="img/bg13.jpg" alt="Imagem 1">
+                </li>
+                <li class="slide">
+                   <img src="img/bg11.jpg" alt="Imagem 2">
+                </li>
+                <li class="slide">
+                    <img src="img/bg12.jpg" alt="Imagem 3">
+                </li>
+                <!-- <button type="button" id="next-btn"><ion-icon name="chevron-forward-outline"></ion-icon></button>-->
+            </ul>
+        </div>
+    </body>
+</html>
